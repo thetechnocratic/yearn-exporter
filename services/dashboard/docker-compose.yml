@@ -2,8 +2,6 @@ version: '3.7'
 
 volumes:
   grafana_data: {}
-  solidity_compilers: {}
-  vyper_compilers: {}
   brownie: {}
   cache: {}
   victoria_metrics_data: {}
@@ -50,8 +48,6 @@ x-common-ftm-envs: &common-ftm-envs
   - FTMSCAN_TOKEN:
 
 x-common-volumes: &common-volumes
-  - solidity_compilers:/root/.solcx
-  - vyper_compilers:/root/.vvm
   - brownie:/root/.brownie
   - cache:/app/yearn-exporter/cache
 
